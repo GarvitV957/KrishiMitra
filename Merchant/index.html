@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sell | Krishimitra</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        nav{
+            z-index: 100;
+        }
+        label, input.input, button.submit{
+            font-size: 24px;
+        }
+        .weatherform{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 30vh;
+        }
+        input.input{
+            width: 250px;
+            border: 2px solid blue;
+            color: blue;
+        }
+        button.submit{
+            width: 200px;
+            border: 3px solid blue;
+            border-radius: 15px;
+            background-color: white;
+            font-weight: 700;
+            color: blue;
+        }
+        button.submit:hover{
+            color: white;
+            background-color: blue;
+            border-color: white;
+        }
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+        .wrapper {
+        max-width: 1140px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        *,
+        *:before,
+        *:after {
+        box-sizing: border-box;
+        }
+
+        a {
+        text-decoration: none;
+        color: #222;
+        }
+
+        html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+        font-family: "Roboto", sans-serif;
+        }
+
+        .sr-only {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0;
+        border: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        }
+
+        .button {
+        -webkit-appearance: none;
+            -moz-appearance: none;
+                appearance: none;
+        color: #fff;
+        background-color: #2fa0f6;
+        min-width: 120px;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        text-align: center;
+        }
+
+        .button svg {
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+        }
+
+        .button span {
+        display: none;
+        }
+
+        a.list-item{
+            color: blue;
+        }
+        a.list-item:hover{
+            color: rgb(34, 34, 102);
+        }
+        a.list-item i{
+            margin-bottom: 5px;
+        }
+
+        @media (min-width: 600px) {
+        .button span {
+            display: initial;
+        }
+        }
+
+        .button--icon {
+        min-width: initial;
+        padding: 0.5rem;
+        }
+
+    .brand{font-weight:700;font-size:34px; color: blue;}
+    .site-header{position:relative;background-color:#def7ff}
+    .site-header__start{display:flex;align-items:center}
+    .site-header__end{display:flex;align-items:center}
+    .site-header__wrapper{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;padding-bottom:1rem}
+    @media(min-width:800px){.site-header__wrapper{padding-top:0;padding-bottom:0}}
+    @media(min-width:800px){.nav__wrapper{display:flex}}
+    @media(max-width:799px){.nav__wrapper{position:absolute;top:calc(100% + 35px);right:0;left:0;z-index:-1;background-color:#d9f0f7;visibility:hidden;opacity:0;transform:translateY(-100%);transition:transform .3s ease-out,opacity .3s ease-out}.nav__wrapper.active{visibility:visible;opacity:1;transform:translateY(0)}}.nav__item:not(:last-child){margin-right:.5rem}.nav__item a{display:block;padding:1rem;border-left:4px solid transparent}@media(min-width:800px){.nav__item a{text-align:center;border-left:0;border-bottom:4px solid transparent}}.nav__item svg{display:inline-block;vertical-align:middle;width:28px;height:28px;margin-right:1rem}@media(min-width:800px){.nav__item svg{display:block;margin:0 auto .5rem}}.nav__item.active a{border-left-color:blue}@media(min-width:800px){.nav__item.active a{border-bottom-color:blue}}.nav__toggle{display:none}@media(max-width:799px){.nav__toggle{display:block;position:absolute;right:1rem;top:1rem}}.search{display:flex;margin-left:1rem}.search__toggle{appearance:none;order:1;font-size:0;width:34px;height:34px;background:url("../img/header-3/search.svg") center right/22px no-repeat;border:0;display:none}@media(min-width:800px){.search__toggle{border-left:1px solid #979797;padding-left:10px}}@media(max-width:799px){.search__toggle{position:absolute;right:5.5rem;top:.65rem;background:url("../img/header-3/search.svg") center/22px no-repeat}}.search__form{display:block}.search__form.active{display:block}@media(max-width:799px){.search__form{position:absolute;left:0;right:0;top:100%}.search__form input{width:100%}}.search__form input{min-width:200px;appearance:none;border:0;background-color:#fff;border-radius:0;font-size:16px;padding:.5rem}@media(max-width:799px){.search__form input{border-bottom:1px solid #979797}}.inactive-item{opacity:0}
+
+
+    </style>
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="site-header">
+      <div class="wrapper site-header__wrapper">
+        <div class="site-header__start">
+          <a href="#" class="brand">कृषिमित्र</a>
+          <div class="search">
+            <button class="search__toggle" aria-label="Open search">
+              Search
+            </button>
+          </div>
+        </div>
+        <div class="site-header__end">
+          <nav class="nav">
+            <button class="nav__toggle" aria-expanded="false" type="button">
+              menu
+            </button>
+            <ul class="nav__wrapper">
+              <li class="nav__item ">
+                <a  href="http://localhost/Farmer's%20Buddy/Merchant/index.html" class="list-item">
+                  <i style="font-size: 30px;" class="fas fa-home"></i>
+                  <br>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="nav__item ">
+                <a  href="http://localhost/farmer's%20buddy/LoginMerchant.html" class="list-item">
+                  <i style="font-size: 30px;" class="fas fa-sign-out-alt"></i>
+                  <br>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+             </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+  
+    <form class="weatherform" action="./buy.php" method="POST">
+        <h1 style="color: white; font-size:30px; margin:10px auto;">Find Farmers At Your Preffered Location And Have A Good Deal.</h1>
+        <label style="color: yellow; font-size:20px;"><b>Enter Your Pin Code Below</b></label>
+        <br>
+        <div style="margin-top: 20px;">
+            <input class="input" type="text" name="Pincode" id="Pincode"> 
+            <button class="submit" type="submit">FIND NOW</button>
+        </div>
+    </form>
+
+    <script>
+        let navToggle=document.querySelector(".nav__toggle");let navWrapper=document.querySelector(".nav__wrapper");navToggle.addEventListener("click",function(){if(navWrapper.classList.contains("active")){this.setAttribute("aria-expanded","false");this.setAttribute("aria-label","menu");navWrapper.classList.remove("active");}else{navWrapper.classList.add("active");this.setAttribute("aria-label","close menu");this.setAttribute("aria-expanded","true");}});let searchToggle=document.querySelector(".search__toggle");let searchForm=document.querySelector(".search__form");searchToggle.addEventListener("click",showSearch);function showSearch(){searchForm.classList.toggle("active");}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Buddy</title>
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <style>
+        .card input{
+          width: 100%;
+          height: 32px;
+          font-size: 28px;
+        }
+        .green{
+            color:rgb(128, 0, 0);
+            font-size:25px;
+            font-weight: bold;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .txt{
+            font-size:18px;
+        }
+        .card{
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            background: #006;
+            color: white;
+            width: 200px;
+        }
+        .box{
+            padding:20px;
+            background-color: rgb(5, 5, 102);
+            width:300px;
+            border: 2px solid white;
+            border-radius: 25px;
+        }
+        img{
+            width: 265px;
+            height: 220px;
+            border-radius:0% 0% 100% 100%;
+        }
+        .txt{
+            margin: auto;
+        }
+        .green{
+            display: flex;
+        }
+        .card-title{
+            color: wheat;
+            font-weight: 500;
+        }
+        .card-body{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body >
+    <!-- Header Start -->
+    <header class="site-header">
+      <div class="wrapper site-header__wrapper">
+        <div class="site-header__start">
+          <a href="#" class="brand">कृषिमित्र</a>
+          <div class="search">
+            <button class="search__toggle" aria-label="Open search">
+              Search
+            </button>
+          </div>
+        </div>
+        <div class="site-header__end">
+          <nav class="nav">
+            <button class="nav__toggle" aria-expanded="false" type="button">
+              menu
+            </button>
+            <ul class="nav__wrapper">
+              <li class="nav__item ">
+                <a  href="http://localhost/farmer's%20buddy/Farmer/index.html" class="list-item">
+                  <i style="font-size: 30px;" class="fas fa-home"></i>
+                  <br>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="nav__item" >
+                <a  href="http://localhost/farmer's%20buddy/Farmer/sell/index.html" class="list-item">
+                    <i style="font-size: 30px;" class="fas fa-luggage-cart"></i>
+                    <br>
+                    <span>Sell</span>
+                </a>
+              </li>
+              <li class="nav__item" >
+                <a  href="http://localhost/farmer's%20buddy/Farmer/buy/buy.html" class="list-item">
+                    <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+                    <br>
+                    <span>Purchase</span>
+                </a>
+              </li>
+              <li class="nav__item" >
+                <a  href="http://localhost:3000/" class="list-item">
+                    <i style="font-size: 30px;" class="fas fa-poo-storm"></i>
+                    <br>
+                    <span>Weather</span>
+                </a>
+              </li>
+              <li class="nav__item" >
+                <a  href="http://localhost/farmer's%20buddy/Farmer/program/govt.html" class="list-item">
+                    <i style="font-size: 30px;" class="fas fa-hands-helping"></i>
+                    <br>
+                    <span>Program</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <h1><center><font color="#600" size="10"><b>Buy Seeds/Tools !!!</b></font></center></h3>
+    <hr color="green" width='70%'>
+    <div class="green">
+        <div class="card" style="width: 18rem;">
+            <img src="./wht.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Wheat</h5>
+              <hr>
+              <p class="card-text">Hello guys.This is Wheat. <br> Price: 50 &#x20b9;/kg</p>
+            </div>
+            <input type="number" value="0" id="wheat" onchange="update()">
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./flax.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Flax</h5>
+              <hr>
+              <p class="card-text">Hello guys.This is Flax. <br> Price:  70 &#x20b9;/kg.</p>
+            </div>
+            <input type="number" value="0" id="flax" onchange="update()">
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./pmp.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pumpkin Seed</h5>
+              <hr>
+              <p class="card-text">Hello guys.This is Pumpkin seed. <br> Price: 100 &#x20b9;/kg.</p>
+            </div>
+            <input type="number" value="0" id="pmp" onchange="update()">
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./tractor.jpg" class="card-img-top" alt="...">
+            <div class="info-box">
+                <div class="card-body">
+                    <h5 class="card-title">Tractor</h5>
+                    <hr>
+                    <p class="card-text">Hello guys.This is Tractor. <br> Price:  55000&#x20b9;/-</p>
+                  </div>
+                  <input type="number" value="0" id="tractor" onchange="update()">
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr color=brown width='80%'>
+    <br>
+    <div>
+       <marquee> <font color="maroon" size=50><u>Total Amount:  </u></font> <font size=50><b id="total"></b></font></marquee>
+    </div>
+    <br>
+    <center><a class="box" href="payment.html"><font color="white" size="5px">Proceed to Payment</font></a></center>
+    <br>
+    <!-- <center><a href="img.html"><img src="Beautiful_Garden.jpg" width="400" height="200"></a></center> -->
+    <script src="buy.js"></script> 
+    <script src="./../index1.js"></script>
+</body>
+</html>

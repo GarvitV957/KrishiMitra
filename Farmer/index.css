@@ -1,0 +1,41 @@
+.box{
+    font-weight: 700;
+}
+body{
+    background-color: black;
+}
+.main-box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 900px;
+    margin: auto;
+}
+.box{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box p{
+    color: white;
+    font-size:22px;
+}
+.info{
+    margin: auto;
+    width: 500px;
+
+}
+.box img{
+   height: 150px;
+}
+.box img:hover{
+    height: 160px;
+}
+.buyimg{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
