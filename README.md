@@ -24,6 +24,8 @@
 
 -> NodeJs/ExpressJs
 
+-> Socket.io
+
 ## Images of some pages
 
 <img src="https://user-images.githubusercontent.com/79037725/189924986-721ddad9-341c-450a-a887-7ae1468306b3.png" width="400" height="300"><img src="https://user-images.githubusercontent.com/79037725/189926034-6592fe43-d48c-4d3b-bb19-9170a3d443f6.png" width="400" height="300">
